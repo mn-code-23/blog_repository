@@ -126,10 +126,10 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/5.0/howto/static-files/
 
 STATIC_URL = '/static/'
+STATIC_IMAGE_URL = '/static/'
 
 # Pour la production
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
-#BASE_DIR / "staticfiles"
 
 STATICFILES_DIRS = [BASE_DIR / "static"]
 
@@ -138,7 +138,4 @@ STATICFILES_DIRS = [BASE_DIR / "static"]
 # https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
-MEDIA_URL = '/media/'
-MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
-#BASE_DIR / "media"
 AUTH_USER_MODEL = 'account.Utilisateur'

@@ -18,7 +18,7 @@ class Categorie(models.Model):
 class Article(models.Model):
     titre = models.CharField(max_length=200)
     contenu = models.TextField()
-    image = models.ImageField(upload_to="articles", blank=True, null=True)
+    image = models.ImageField(upload_to="static/articles/", blank=True, null=True)
     auteur = models.ForeignKey(AUTH_USER_MODEL, on_delete=models.CASCADE)
     slug = models.SlugField(unique=True)
     categories = models.ForeignKey(Categorie, on_delete=models.CASCADE, related_name='categories')

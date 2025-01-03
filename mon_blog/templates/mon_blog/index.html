@@ -32,6 +32,7 @@
                 <div class="col">
                   <div class="card" >
                     {% if article.image %}
+                    {% load static %}
                       <img src="{{ article.image.url }}" class="card-img-top image_article" alt="...">
                     {% endif %}
                     <div class="card-body">
